@@ -44,7 +44,7 @@ doesPathExist(graph, "a", "a"); // false
 
 ## Example Output continued
 
-[graph](https://i.imgur.com/ehvb9qx.png)
+.center[![graph](https://i.imgur.com/ehvb9qx.png)]
 
 ```javascript
 const graph = {
