@@ -245,24 +245,3 @@ This table reads as follows:<br>
 `r -> a`
 
 ---
-
-## Discussion
-
-Consider the tradeoffs between using one of these data structures or the other. Which do we prefer for the following operations?
-
-- Testing if a given edge exists
-  - Adjacency matrix O(1)
-- Finding the # of edges of a vertex
-  - Adjacency list O(1)
-- Insertion/deletion of edges
-  - AM O(1), AL O(d) where d is degree of vertex
-- Memory usage for sparse graphs
-  - AL O(v + e), AM O(v^2)
-- Memory usage for dense graphs
-  - AM O(v^2)
-- Graph traversal
-  - AL O(v + e), AM O(n^2)
-- Better overall
-  - Adjacency List
-
-## Comparison from The Algorithm Design Manual, Skiena - second Edition - page 152
