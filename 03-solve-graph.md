@@ -123,9 +123,9 @@ function doesPathExist(graph, start, end) {
       // we've never seen this node before, so we need to save this node in the seen object
       seen[currentNode] = true;
       if ((currentNode === end) && (start !== end)) {
-        // we need to make sure we are only returning true if the start and end nodes aren't the same, OTHERWISE we run the risk
-        // of returning an incorrect true (if we are looking for a loop, i.e. does node A connect to node A, we need to find this node
-        // TWICE in the system!)
+        // we need to make sure we are only returning true if the start and end nodes aren't the same,
+        // OTHERWISE we run the risk of returning an incorrect true (if we are looking for a loop,
+        // i.e. does node A connect to node A, we need to find this node TWICE in the system!)
         return true;
       }
     } else {
