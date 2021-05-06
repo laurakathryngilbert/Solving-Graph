@@ -62,8 +62,6 @@ doesPathExist(graph, "s", "a"); // false
 
 ---
 
-class: center middle
-
 ## Interviewer Guide
 
 ---
