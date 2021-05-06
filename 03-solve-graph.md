@@ -44,7 +44,7 @@ doesPathExist(graph, "a", "a"); // false
 
 ## Example Output continued
 
-.center[![graph](https://i.imgur.com/ehvb9qx.png)]
+[graph](https://i.imgur.com/ehvb9qx.png)
 
 ```javascript
 const graph = {
@@ -127,8 +127,6 @@ const doesPathExist = (graph, start, target, visited = {}) => {
   });
 };
 ```
-
-## [MDN .some()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
 
 Breadth First Search Solution
 
