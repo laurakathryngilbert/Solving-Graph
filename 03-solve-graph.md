@@ -110,39 +110,6 @@ Have your interviewee test their implementation on acyclic and cyclic graphs.
 
 ## Solution
 
-Depth First Search Solution with a while loop and a stack
-
-```javascript
-function doesPathExist(graph, start, end) {
-  let stack = [start];
-  let seen = {};
-
-  while (stack.length) {
-    let currentNode = stack.pop()
-    if (!seen[currentNode]) {
-      // we've never seen this node before, so we need to save this node in the seen object
-      seen[currentNode] = true;
-      if ((currentNode === end) && (start !== end)) {
-        // we need to make sure we are only returning true if the start and end nodes aren't the same,
-        // OTHERWISE we run the risk of returning an incorrect true (if we are looking for a loop,
-        // i.e. does node A connect to node A, we need to find this node TWICE in the system!)
-        return true;
-      }
-    } else {
-      if (start === end && currentNode === end) {
-        // if we have seen the node before and it's because we're actively looking for a loop in the system,
-        // CONGRATS, y'all, WE DID IT
-        return true;
-      }
-    }
-    // we want to add this node's children/connections to the stack
-    let children = graph[currentNode];
-    stack.push(...children);
-  }
-  return false;
-}
-```
-
 Depth First Search Solution with Recursion and .some()
 
 ```javascript
